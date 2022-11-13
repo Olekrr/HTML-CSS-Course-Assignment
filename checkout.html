@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ole Kristian Rasmussen" />
+    <meta name="description" content="checkout" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
+    <title>Checkout | Gamehub</title>
+  </head>
+  <body>
+    <header>
+      <!--Hamburger Menu for mobile-->
+      <div>
+        <nav role="navigation">
+          <div id="menu">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menupoints">
+              <a href="#"><li>Home</li></a>
+              <a href="about.html"><li>About</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+              <a href="shoppingcart.html"><li>Shopping Cart</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Hamburger Menu for mobile-->
+
+      <!--Mobile logo, hidden on desktop-->
+      <div class="center_logo">
+        <div class="logo_container">
+          <div class="mobile_logo">
+            <img class="logo" src="Assets/images/GameHub_Logo.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="navcontainer">
+        <!--Navigation left of logo-->
+        <nav class="leftnav">
+          <ul>
+            <li>
+              <a href="#!">
+                <div class="circle">
+                  <div class="elipse">
+                    <p class="nav_button_text">Sell Games</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <div class="circle">
+                  <div class="elipse"><p class="nav_button_text">About</p></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <div class="circle">
+                  <div class="elipse">
+                    <p class="nav_button_text">Contact</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Logo-->
+        <div class="logocontainer">
+          <div class="logostyling">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="/Assets/images/GameHub_Logo.png"
+                alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!--Navigation right of logo-->
+        <nav class="rightnav">
+          <ul>
+            <li>
+              <a href="#!">
+                <div class="circle">
+                  <div class="elipse">
+                    <p class="nav_button_text">
+                      <img
+                        class="nav_icon"
+                        src="Assets/images/User info icon.png"
+                        alt="User profile icon"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="shoppingcart.html">
+                <div class="circle">
+                  <div class="elipse">
+                    <p class="nav_button_text">
+                      <img
+                        class="nav_icon"
+                        src="Assets/images/Shopping Cart Icon.png"
+                        alt="Shopping cart icon"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="checkouth1">Checkout</h1>
+      <div class="content_container">
+        <div class="content_column">
+          <div class="products">
+            <div class="content_column_subcontainer">
+              <img src="Assets/images/GameHub_covers6.jpg" />
+              <div class="text_container">
+                <h3>Space War</h3>
+                <hr />
+                <p>
+                  Discover and wage war upon ancient alien civilizations in the
+                  smash hit Space War
+                </p>
+              </div>
+              <br class="mobilebr">
+              <hr class="mobilehr">
+              <div>
+                <p>Quantity</p>
+                <p>1</p>
+              </div>
+              <br class="mobilebr">
+              <hr class="mobilehr">
+              <div>
+                <p>Total</p>
+                <p>99,-</p>
+              </div>
+            </div>
+            <div class="content_column_subcontainer">
+              <img src="Assets/images/GameHub_covers.jpg" />
+              <div class="text_container">
+                <h3>Ping Pong Campionship - Playbox</h3>
+                <hr />
+                <p>
+                  Tour the world and face skilled competitors in this
+                  remastering of a timeless classic
+                </p>
+              </div>
+              <br class="mobilebr">
+              <hr class="mobilehr">
+              <div>
+                <p>Quantity</p>
+                <p>1</p>
+              </div>
+              <br class="mobilebr">
+              <hr class="mobilehr">
+              <div>
+                <p>Total</p>
+                <p>99,-</p>
+              </div>
+            </div>
+            <div class="content_column_form_container">
+              <h2>Checkout Information</h2>
+              <form>
+                <div class="checkout_information_form">
+                  <label>First Name</label>
+                  <input type="text" name="firstname" />
+                  <label>Adress</label>
+                  <input type="text" name="adress" />
+                  <label>City</label>
+                  <input type="text" name="city" />
+                  <label>Email</label>
+                  <input type="text" name="email" />
+                </div>
+                <div class="checkout_information_form">
+                  <label>Last Name</label>
+                  <input type="text" name="lastname" />
+                  <label>Post Code</label>
+                  <input type="text" name="postcode" />
+                  <label>Country</label>
+                  <input type="text" name="country" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="payment_information">
+            <h1>Payment Method</h1>
+            <hr class="payment_method_separator" />
+            <div>
+              <form class="payment_information_form">
+                <div class="flexer">
+                  <input class="checkbox1" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/Visa.png" />
+                  <p class="card_separator">/</p>
+                  <img
+                    class="payment_icon"
+                    src="Assets/images/Mastercard.png"
+                  />
+                </div>
+                <div class="card_information">
+                  <div>
+                    <label class="card_number_label">Card Number</label>
+                    <input
+                      class="card_number_input"
+                      type="text"
+                      name="cardnumber"
+                    />
+                  </div>
+                  <div>
+                    <label>Exp. Date</label>
+                    <input
+                      class="expdate_ccv_input"
+                      type="text"
+                      name="exp.date"
+                    />
+                  </div>
+                  <div>
+                    <label>CCV</label>
+                    <input class="expdate_ccv_input" type="text" name="ccv" />
+                  </div>
+                </div>
+                <div>
+                  <label class="card_number_label">Card Holder Name</label>
+                  <input
+                    class="card_number_input"
+                    type="text"
+                    name="cardholdername"
+                  />
+                </div>
+                <div class="flexer">
+                  <input class="checkbox1" type="checkbox" />
+                  <img
+                    class="payment_icon"
+                    src="Assets/images/Google Pay.png"
+                  />
+                </div>
+                <div class="flexer">
+                  <input class="checkbox1" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/Skrill.png" />
+                </div>
+                <div class="flexer">
+                  <input class="checkbox1" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/paypal.png" />
+                </div>
+                <div class="flexer">
+                  <input class="checkbox2" type="checkbox" />
+                  <p>Bank Transfer</p>
+                </div>
+                <div class="flexer">
+                  <input class="checkbox2" type="checkbox" />
+                  <p>Invoice on Arrival</p>
+                </div class="total_price_button">
+                <p class="total_price">Total</p>
+                <p class="total_price">398,-</p>
+                <a href="checkout_complete.html">
+                  <div class="total_price_button">
+                    <div class="button">
+                      <p class="centering">Complete Transaction</p>
+                    </div>
+                  </div>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

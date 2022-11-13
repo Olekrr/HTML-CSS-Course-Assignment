@@ -1,0 +1,308 @@
+@font-face {
+  font-family: Inter;
+  src: url(../Assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  font-family: Inter;
+  font-weight: bold;
+}
+:root {
+  --background-colour: linear-gradient(180deg, #69dbd200 55%, #69dbd2a8 75%);
+}
+body {
+  background-image: url(/Assets/images/Background.jpg);
+  text-align: center;
+}
+
+#menu {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#menu a {
+  color: #ffffff;
+}
+
+
+/*Hidden checkbox, used to trigger a transformation*/
+#menu input {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+/*Spans styled to appear as thin grey lines*/
+#menu span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #817d7d;
+  z-index: 1;
+  transform-origin: 4px 0px;
+}
+
+/*Transform used to remove middle span, and rotate top and bottom span
+  45 degrees to form a cross*/
+#menu span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menu input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+
+#menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+}
+
+#menu input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg);
+}
+
+/*Is hidden untill checkbox is checked, at which point
+  it slides in from the left*/
+#menupoints {
+  position: absolute;
+  width: 100%;
+  background: #000000;
+  list-style: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+}
+
+#menupoints li {
+  font-family: oswald;
+  font-size: 22px;
+}
+
+#menu input:checked ~ ul {
+  transform: none;
+}
+
+.navcontainer {
+  display: none;
+}
+.center_logo{
+  display: flex;
+  justify-content: center;
+}
+
+.mobile_logo{
+  width: 270px;
+  height: 210px;
+  Border-radius: 50%;
+  background: var(--background-colour);
+  margin-bottom: 30px;
+}
+.logo{
+  margin-top: 40px;
+  width: 200px;
+}
+
+.content_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content_column {
+  background-color: #000000a6;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  width: 99%;
+  justify-content: space-evenly;
+  display: flex;
+}
+.bandade{
+  display: flex;
+  width: 50%;
+}
+.image_container {
+  width: 55%;
+}
+.game_image {
+  width: 80%;
+  margin-top: 15px;
+}
+.description_container {
+  width: 40%;
+  margin-top: 15px;
+  text-align: left;
+  display: none;
+}
+
+hr {
+  margin: 5px 0px;
+}
+.information_container {
+  width: 40%;
+  margin-top: 15px;
+  margin: auto;
+ 
+}
+
+.margin_adjustment {
+  margin-top: 35px;
+}
+
+#checkout_procedure {
+  flex-direction: column;
+  width: 99%;
+  text-align: right;
+}
+#checkout_procedure p {
+  margin: 10px 25px 0px 0px;
+}
+.checkout_button {
+  width: 150px;
+  height: 30px;
+  background: #69dbd259;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0px 0px 20px;
+  cursor: pointer;
+}
+#bottom_container {
+  margin-top: 20px;
+  
+}
+.bottom_column_text {
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+}
+.final_column{
+  width: 100%;
+}
+.popular_image_container {
+  width: 40%;
+  margin: auto;
+}
+
+
+.popular_image {
+  margin-top: 20px;
+  width: 100%;
+}
+.popular_button {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  height: 30px;
+  background: #69dbd259;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile_logo{
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  .navcontainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 100px;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  li {
+    margin: 67.5px 12px 67.5px 12px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    background: #1b203d;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px #00000040;
+    cursor: pointer;
+  }
+  .elipse {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    background: var(--background-colour);
+    filter: drop-shadow(0px 10px 4px #00000040);
+  }
+  .nav_button_text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 1;
+  }
+  .nav_icon {
+    position: relative;
+    top: -8px;
+  }
+  .logocontainer {
+    margin: 0% 18.33% 0% 11.53%;
+  }
+  .logostyling {
+    width: 270px;
+    height: 210px;
+    border-radius: 50%;
+    background: var(--background-colour);
+  }
+  .logo {
+    margin-top: 40px;
+    width: 200px;
+  }
+  .content_column {
+    width: 860px;
+  }
+  .image_container {
+    width: 30%;
+  }
+
+  .description_container {
+    width: 70%;
+    display:block;
+  }
+
+  #checkout_procedure_container {
+    margin-left: 335px;
+  }
+  #checkout_procedure {
+    width: 190px;
+  }
+
+
+  .final_column{
+    display: flex;
+  }
+  .popular_image_container {
+    width: 14%;
+  }
+  
+
+
+}
