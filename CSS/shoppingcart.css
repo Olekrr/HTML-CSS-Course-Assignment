@@ -1,6 +1,6 @@
 @font-face {
   font-family: Inter;
-  src: url(../Assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(../Assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 * {
   margin: 0%;
@@ -28,7 +28,6 @@ body {
 #menu a {
   color: #ffffff;
 }
-
 
 /*Hidden checkbox, used to trigger a transformation*/
 #menu input {
@@ -100,19 +99,19 @@ body {
 .navcontainer {
   display: none;
 }
-.center_logo{
+.center_logo {
   display: flex;
   justify-content: center;
 }
 
-.mobile_logo{
+.mobile_logo {
   width: 270px;
   height: 210px;
-  Border-radius: 50%;
+  border-radius: 50%;
   background: var(--background-colour);
   margin-bottom: 30px;
 }
-.logo{
+.logo {
   margin-top: 40px;
   width: 200px;
 }
@@ -130,7 +129,7 @@ body {
   justify-content: space-evenly;
   display: flex;
 }
-.bandade{
+.bandade {
   display: flex;
   width: 50%;
 }
@@ -155,7 +154,6 @@ hr {
   width: 40%;
   margin-top: 15px;
   margin: auto;
- 
 }
 
 .margin_adjustment {
@@ -181,20 +179,18 @@ hr {
 }
 #bottom_container {
   margin-top: 20px;
-  
 }
 .bottom_column_text {
   margin: 20px 0px 0px 0px;
   font-size: 20px;
 }
-.final_column{
+.final_column {
   width: 100%;
 }
 .popular_image_container {
   width: 40%;
   margin: auto;
 }
-
 
 .popular_image {
   margin-top: 20px;
@@ -214,7 +210,7 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-  .mobile_logo{
+  .mobile_logo {
     display: none;
   }
   #menu {
@@ -235,7 +231,7 @@ hr {
   li {
     margin: 67.5px 12px 67.5px 12px;
   }
-  
+
   .circle {
     border-radius: 50%;
     background: #1b203d;
@@ -285,7 +281,7 @@ hr {
 
   .description_container {
     width: 70%;
-    display:block;
+    display: block;
   }
 
   #checkout_procedure_container {
@@ -295,14 +291,10 @@ hr {
     width: 190px;
   }
 
-
-  .final_column{
+  .final_column {
     display: flex;
   }
   .popular_image_container {
     width: 14%;
   }
-  
-
-
 }

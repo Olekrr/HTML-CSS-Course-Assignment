@@ -1,6 +1,6 @@
 @font-face {
   font-family: Inter;
-  src: url(../Assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(../Assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 * {
   margin: 0%;
@@ -27,7 +27,6 @@ body {
 #menu a {
   color: #ffffff;
 }
-
 
 /*Hidden checkbox, used to trigger a transformation*/
 #menu input {
@@ -99,27 +98,26 @@ body {
 .navcontainer {
   display: none;
 }
-.center_logo{
+.center_logo {
   display: flex;
   justify-content: center;
 }
 
-.mobile_logo{
+.mobile_logo {
   width: 270px;
   height: 210px;
-  Border-radius: 50%;
+  border-radius: 50%;
   background: var(--background-colour);
   margin-bottom: 30px;
 }
-.logo{
+.logo {
   margin-top: 40px;
   width: 200px;
 }
-.image{
+.image {
   width: 100%;
   margin-bottom: 10px;
 }
-
 
 .content_column {
   margin: 2% 2% 2% 0;
@@ -134,13 +132,11 @@ body {
   margin: 5%;
 }
 
-
 @media screen and (min-width: 1440px) {
   body {
-    
     text-align: center;
   }
-  .mobile_logo{
+  .mobile_logo {
     display: none;
   }
   #menu {
@@ -208,6 +204,5 @@ body {
   }
   .content_column {
     width: 40%;
-    
   }
 }
