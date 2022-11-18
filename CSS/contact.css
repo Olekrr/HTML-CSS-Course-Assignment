@@ -6,6 +6,7 @@
 .content_column {
   width: 90%;
   background-color: #000000a6;
+  height: 700px;
 }
 .h1_margin {
   margin: 10px 0px 10px 0px;
@@ -19,8 +20,8 @@ hr {
 }
 .form {
   margin: 10px 0px 10px 0px;
-  width: 100%;
   text-align: left;
+  width: 62.05%;
   margin-left: 18.975%;
 }
 .input_container {
@@ -28,7 +29,7 @@ hr {
 }
 input {
   height: 30px;
-  width: 62.05%;
+  width: 100%;
   background: #ffffffa8;
   border-radius: 5px;
   border-color: #69dbd2;
@@ -37,14 +38,16 @@ input {
 .message_input {
   height: 150px;
 }
-button {
-  width: 23.58%;
+.form_button {
+  width: 150px;
   height: 40px;
-  margin-bottom: 20px;
   background: #69dbd259;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+.form_button > p{
+  margin-top: 10px;
 }
 
 #content_container2 {
