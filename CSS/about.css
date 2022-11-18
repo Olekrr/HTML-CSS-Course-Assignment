@@ -18,9 +18,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  body {
-    text-align: center;
-  }
+  
   .content_container {
     justify-content: center;
     display: flex;
