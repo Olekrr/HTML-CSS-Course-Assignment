@@ -7,158 +7,231 @@
     <meta name="author" content="Ole Kristian Rasmussen" />
     <meta name="description" content="All products available at gamehub" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/product_list.css">
+    <link rel="stylesheet" href="CSS/product_list.css" />
     <title>Games | Gamehub</title>
   </head>
   <body>
-  <header>
-    <!--Hamburger Menu for mobile-->
-    <div>
-      <nav>
-        <div id="menu">
-          <input type="checkbox" />
+    <header>
+      <!--Hamburger Menu for mobile-->
+      <div>
+        <nav>
+          <div id="menu">
+            <input type="checkbox" />
 
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-          <ul id="menupoints">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product_list.html">Games</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="shoppingcart.html">Shopping Cart</a></li>
-          </ul>
-        </div>
-        <div class="navcontainer">
-          <!--Navigation left of logo-->
-          <div class="leftnav">
-            <ul>
-              <li>
-                <a href="product_list.html">
-                  <div class="circle">
-                    <div class="elipse">
-                      <p class="nav_button_text">Games</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="about.html">
-                  <div class="circle">
-                    <div class="elipse">
-                      <p class="nav_button_text">About</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="contact.html">
-                  <div class="circle">
-                    <div class="elipse">
-                      <p class="nav_button_text">Contact</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
+            <ul id="menupoints">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product_list.html">Games</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="shoppingcart.html">Shopping Cart</a></li>
             </ul>
           </div>
+          <div class="navcontainer">
+            <!--Navigation left of logo-->
+            <div class="leftnav">
+              <ul>
+                <li>
+                  <a href="product_list.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Games</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">About</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Contact</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <!--Logo-->
-          <div class="logocontainer">
-            <div class="logostyling">
-              <a href="index.html">
-                <img
-                  class="logo"
-                  src="/Assets/images/GameHub_Logo.png"
-                  alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
-                />
-              </a>
+            <!--Logo-->
+            <div class="logocontainer">
+              <div class="logostyling">
+                <a href="index.html">
+                  <img
+                    class="logo"
+                    src="/Assets/images/GameHub_Logo.png"
+                    alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!--Navigation right of logo-->
+            <div class="rightnav">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/User_info_icon.png"
+                            alt="User profile icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="shoppingcart.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/Shopping_Cart_Icon.png"
+                            alt="Shopping cart icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+      </div>
 
-          <!--Navigation right of logo-->
-          <div class="rightnav">
-            <ul>
-              <li>
-                <a href="#!">
-                  <div class="circle">
-                    <div class="elipse">
-                      <p class="nav_button_text">
-                        <img
-                          class="nav_icon"
-                          src="Assets/images/User_info_icon.png"
-                          alt="User profile icon"
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="shoppingcart.html">
-                  <div class="circle">
-                    <div class="elipse">
-                      <p class="nav_button_text">
-                        <img
-                          class="nav_icon"
-                          src="Assets/images/Shopping_Cart_Icon.png"
-                          alt="Shopping cart icon"
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+      <!--Mobile logo, hidden on desktop-->
+      <div class="center_logo">
+        <div class="logo_container">
+          <div class="mobile_logo">
+            <img
+              class="logo"
+              src="Assets/images/GameHub_Logo.png"
+              alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
+            />
           </div>
         </div>
-      </nav>
-    </div>
-
-    <!--Mobile logo, hidden on desktop-->
-    <div class="center_logo">
-      <div class="logo_container">
-        <div class="mobile_logo">
-          <img
-            class="logo"
-            src="Assets/images/GameHub_Logo.png"
-            alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
-          />
-        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="games_content_container">
+    </header>
+    <main>
+      <div class="games_content_container">
         <div class="games_content_column">
-            <div class="front_page_content_container">
-                <p class="content_text">Games</p>
+          <div class="front_page_content_container">
+            <p class="content_text">Games</p>
+          </div>
+          <div class="front_page_content_container_desktop_adjustor">
+            <div class="deals_image_container">
+              <a href="product_details.html"
+                ><img
+                  class="deals_image"
+                  src="Assets/images/GameHub_covers.jpg"
+                  alt="Space Wars video game cover"
+                />
+              </a>
+              <div class="flexbutton">
+                <a class="deals_button" href="product_details.html"
+                  ><p>Learn More</p></a
+                >
+                <a class="deals_button" href="shoppingcart.html"
+                  ><p>Add to Cart</p></a
+                >
               </div>
+            </div>
+
+            <div class="deals_image_container">
+              <a href="product_details.html"
+                ><img
+                  class="deals_image"
+                  src="Assets/images/GameHub_covers2.jpg"
+                  alt="Space Wars video game cover"
+                />
+              </a>
+              <div class="flexbutton">
+                <a class="deals_button" href="product_details.html"
+                  ><p>Learn More</p></a
+                >
+                <a class="deals_button" href="shoppingcart.html"
+                  ><p>Add to Cart</p></a
+                >
+              </div>
+            </div>
+            <div class="deals_image_container">
+              <a href="product_details.html"
+                ><img
+                  class="deals_image"
+                  src="Assets/images/GameHub_covers3.jpg"
+                  alt="Space Wars video game cover"
+                />
+              </a>
+              <div class="flexbutton">
+                <a class="deals_button" href="product_details.html"
+                  ><p>Learn More</p></a
+                >
+                <a class="deals_button" href="shoppingcart.html"
+                  ><p>Add to Cart</p></a
+                >
+              </div>
+            </div>
+            <div class="deals_image_container">
+              <a href="product_details.html"
+                ><img
+                  class="deals_image"
+                  src="Assets/images/GameHub_covers4.jpg"
+                  alt="Super Duper video game cover"
+                />
+              </a>
+              <div class="flexbutton">
+                <a class="deals_button" href="product_details.html"
+                  ><p>Learn More</p></a
+                >
+                <a class="deals_button" href="shoppingcart.html"
+                  ><p>Add to Cart</p></a
+                >
+              </div>
+            </div>
+            <div class="deals_image_container">
+              <a href="product_details.html"
+                ><img
+                  class="deals_image"
+                  src="Assets/images/GameHub_covers5.jpg"
+                  alt="Space Wars video game cover"
+                />
+              </a>
+              <div class="flexbutton">
+                <a class="deals_button" href="product_details.html"
+                  ><p>Learn More</p></a
+                >
+                <a class="deals_button" href="shoppingcart.html"
+                  ><p>Add to Cart</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="content_column">
             <div class="front_page_content_container_desktop_adjustor">
               <div class="deals_image_container">
                 <a href="product_details.html"
                   ><img
                     class="deals_image"
-                    src="Assets/images/GameHub_covers.jpg"
-                    alt="Space Wars video game cover">
-                </a>
-                <div class="flexbutton">
-                  <a class="deals_button" href="product_details.html"
-                    ><p>Learn More</p></a
-                  >
-                  <a class="deals_button" href="shoppingcart.html"
-                    ><p>Add to Cart</p></a
-                  >
-                </div>
-              </div>
-              
-              <div class="deals_image_container">
-                <a href="product_details.html"
-                  ><img
-                    class="deals_image"
-                    src="Assets/images/GameHub_covers2.jpg"
-                    alt="Space Wars video game cover">
+                    src="Assets/images/GameHub_covers6.jpg"
+                    alt="Space Wars video game cover"
+                  />
                 </a>
                 <div class="flexbutton">
                   <a class="deals_button" href="product_details.html"
@@ -173,8 +246,9 @@
                 <a href="product_details.html"
                   ><img
                     class="deals_image"
-                    src="Assets/images/GameHub_covers3.jpg"
-                    alt="Space Wars video game cover">
+                    src="Assets/images/GameHub_covers7.jpg"
+                    alt="Space Wars video game cover"
+                  />
                 </a>
                 <div class="flexbutton">
                   <a class="deals_button" href="product_details.html"
@@ -189,8 +263,9 @@
                 <a href="product_details.html"
                   ><img
                     class="deals_image"
-                    src="Assets/images/GameHub_covers4.jpg"
-                    alt="Super Duper video game cover">
+                    src="Assets/images/GameHub_covers8.jpg"
+                    alt="Space Wars video game cover"
+                  />
                 </a>
                 <div class="flexbutton">
                   <a class="deals_button" href="product_details.html"
@@ -205,8 +280,26 @@
                 <a href="product_details.html"
                   ><img
                     class="deals_image"
-                    src="Assets/images/GameHub_covers5.jpg"
-                    alt="Space Wars video game cover">
+                    src="Assets/images/GameHub_covers9.jpg"
+                    alt="Super Duper video game cover"
+                  />
+                </a>
+                <div class="flexbutton">
+                  <a class="deals_button" href="product_details.html"
+                    ><p>Learn More</p></a
+                  >
+                  <a class="deals_button" href="shoppingcart.html"
+                    ><p>Add to Cart</p></a
+                  >
+                </div>
+              </div>
+              <div class="deals_image_container">
+                <a href="product_details.html"
+                  ><img
+                    class="deals_image"
+                    src="Assets/images/GameHub_covers10.jpg"
+                    alt="Space Wars video game cover"
+                  />
                 </a>
                 <div class="flexbutton">
                   <a class="deals_button" href="product_details.html"
@@ -218,94 +311,9 @@
                 </div>
               </div>
             </div>
-            <div class="content_column">
-                <div class="front_page_content_container_desktop_adjustor">
-                  <div class="deals_image_container">
-                    <a href="product_details.html"
-                      ><img
-                        class="deals_image"
-                        src="Assets/images/GameHub_covers6.jpg"
-                        alt="Space Wars video game cover">
-                    </a>
-                    <div class="flexbutton">
-                      <a class="deals_button" href="product_details.html"
-                        ><p>Learn More</p></a
-                      >
-                      <a class="deals_button" href="shoppingcart.html"
-                        ><p>Add to Cart</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="deals_image_container">
-                    <a href="product_details.html"
-                      ><img
-                        class="deals_image"
-                        src="Assets/images/GameHub_covers7.jpg"
-                        alt="Space Wars video game cover">
-                    </a>
-                    <div class="flexbutton">
-                      <a class="deals_button" href="product_details.html"
-                        ><p>Learn More</p></a
-                      >
-                      <a class="deals_button" href="shoppingcart.html"
-                        ><p>Add to Cart</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="deals_image_container">
-                    <a href="product_details.html"
-                      ><img
-                        class="deals_image"
-                        src="Assets/images/GameHub_covers8.jpg"
-                        alt="Space Wars video game cover">
-                    </a>
-                    <div class="flexbutton">
-                      <a class="deals_button" href="product_details.html"
-                        ><p>Learn More</p></a
-                      >
-                      <a class="deals_button" href="shoppingcart.html"
-                        ><p>Add to Cart</p></a
-                      >
-                    </div>
-                    
-                  </div>
-                  <div class="deals_image_container">
-                    <a href="product_details.html"
-                      ><img
-                        class="deals_image"
-                        src="Assets/images/GameHub_covers9.jpg"
-                        alt="Super Duper video game cover">
-                    </a>
-                    <div class="flexbutton">
-                      <a class="deals_button" href="product_details.html"
-                        ><p>Learn More</p></a
-                      >
-                      <a class="deals_button" href="shoppingcart.html"
-                        ><p>Add to Cart</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="deals_image_container">
-                    <a href="product_details.html"
-                      ><img
-                        class="deals_image"
-                        src="Assets/images/GameHub_covers10.jpg"
-                        alt="Space Wars video game cover">
-                    </a>
-                    <div class="flexbutton">
-                      <a class="deals_button" href="product_details.html"
-                        ><p>Learn More</p></a
-                      >
-                      <a class="deals_button" href="shoppingcart.html"
-                        ><p>Add to Cart</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-                
           </div>
-
-    </div>
-  </main> 
+        </div>
+      </div>
+    </main>
   </body>
 </html>
