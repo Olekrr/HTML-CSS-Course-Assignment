@@ -112,19 +112,6 @@ h3 {
 .popular_image {
   width: 100%;
 }
-.popular_button {
-  margin-top: -4px;
-  margin-bottom: 10px;
-  text-align: center;
-  width: 100%;
-  height: 20px;
-  background: #69dbd259;
-  box-shadow: 0px 4px 4px #00000040;
-  border-radius: 0px 0px 5px 5px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1440px) {
   
   .content_column {
