@@ -2,19 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ole Kristian Rasmussen" />
-    <meta name="description" content="Product details page, showcasing the product" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/product_details.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ole Kristian Rasmussen">
+    <meta
+      name="description"
+      content="Product details page, showcasing the product">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/product_details.css">
     <title>Space War Product Details | Gamehub</title>
   </head>
   <body>
     <header>
       <!--Hamburger Menu for mobile-->
       <div>
-        <nav role="navigation">
+        <nav>
           <div id="menu">
             <input type="checkbox" />
 
@@ -24,14 +26,97 @@
 
             <ul id="menupoints">
               <li><a href="index.html">Home</a></li>
+              <li><a href="product_list.html">Games</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="shoppingcart.html">Shopping Cart</a></li>
             </ul>
           </div>
+          <div class="navcontainer">
+            <!--Navigation left of logo-->
+            <div class="leftnav">
+              <ul>
+                <li>
+                  <a href="product_list.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Games</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">About</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Contact</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!--Logo-->
+            <div class="logocontainer">
+              <div class="logostyling">
+                <a href="index.html">
+                  <img
+                    class="logo"
+                    src="/Assets/images/GameHub_Logo.png"
+                    alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!--Navigation right of logo-->
+            <div class="rightnav">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/User_info_icon.png"
+                            alt="User profile icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="shoppingcart.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/Shopping_Cart_Icon.png"
+                            alt="Shopping cart icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
-      <!--Hamburger Menu for mobile-->
 
       <!--Mobile logo, hidden on desktop-->
       <div class="center_logo">
@@ -45,88 +130,6 @@
           </div>
         </div>
       </div>
-
-      <div class="navcontainer">
-        <!--Navigation left of logo-->
-        <nav class="leftnav">
-          <ul>
-            <li>
-              <a href="#!">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">Sell Games</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="about.html">
-                <div class="circle">
-                  <div class="elipse"><p class="nav_button_text">About</p></div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="contact.html">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">Contact</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <!--Logo-->
-        <div class="logocontainer">
-          <div class="logostyling">
-            <a href="index.html">
-              <img
-                class="logo"
-                src="/Assets/images/GameHub_Logo.png"
-                alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!--Navigation right of logo-->
-        <nav class="rightnav">
-          <ul>
-            <li>
-              <a href="#!">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">
-                      <img
-                        class="nav_icon"
-                        src="Assets/images/User_info_icon.png"
-                        alt="User profile icon"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="shoppingcart.html">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">
-                      <img
-                        class="nav_icon"
-                        src="Assets/images/Shopping Cart Icon.png"
-                        alt="Shopping cart icon"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
     <main>
       <div class="content_container">
@@ -136,28 +139,26 @@
               <img
                 class="stars"
                 src="Assets/images/Star_rating.png"
-                alt="star rating 4 out of 5"
-              />
+                alt="star rating 4 out of 5">
               <p class="rating_text">4/5 from 237 ratings</p>
             </div>
             <img
               class="space_war_img"
               src="Assets/images/GameHub_covers6.jpg"
-              alt="Space War video game cover"
-            />
+              alt="Space War video game cover">
           </div>
 
           <div class="game_info">
             <h1>Space War</h1>
-            <hr />
+            <hr>
             <p class="game_info_main_text">
               Battle for domination as 7 different playable races. Gather more
               resources and crush your opponents in an epic shodown for
               survival. However beware of the alien hives that tunnel under the
               ground. You never know what horrors you will encounter in the
-              darkest corncers of space.
+              darkest corners of space.
             </p>
-            <hr />
+            <hr>
             <div class="product_details_photo_container">
               <img
                 class="product_details_photo"
@@ -174,17 +175,15 @@
                 src="Assets/images/Product_Details_Photo_3.jpg"
                 alt="Image of winged woman fighting in space"
               />
-              <hr />
+              <hr>
               <div class="buttons_spacing">
-                <a href="index.html"
-                  ><button class="product_details_button">
+                <a href="index.html" class="product_details_button"
+                  ><p class="product_details_button_text">
                     Continue Shopping
-                  </button></a
+                  </p></a
                 >
-                <a href="shoppingcart.html"
-                  ><button class="product_details_button">
-                    Add to Cart
-                  </button></a
+                <a href="shoppingcart.html" class="product_details_button"
+                  ><p class="product_details_button_text">Add to Cart</p></a
                 >
               </div>
             </div>
@@ -196,34 +195,33 @@
               <img
                 class="trailer_img"
                 src="Assets/images/Product_Details_Video_Photo.jpg"
-                alt="Image of man in space suit fiering a gun "
-              />
+                alt="Image of man in space suit fiering a gun">
               <div class="game_specifications_text">
                 <div class="game_specifications_sub">
                   <p>Genre</p>
                   <p>Real Time Strategy</p>
                 </div>
-                <hr />
+                <hr>
                 <div class="game_specifications_sub">
                   <p>Platform</p>
                   <p>Playbox</p>
                 </div>
-                <hr />
+                <hr>
                 <div class="game_specifications_sub">
                   <p>PEGI class</p>
                   <p>16</p>
                 </div>
-                <hr />
+                <hr>
                 <div class="game_specifications_sub">
                   <p>Publisher</p>
                   <p>Imaginary LTD.</p>
                 </div>
-                <hr />
+                <hr>
                 <div class="game_specifications_sub">
                   <p>Developer</p>
                   <p>Nonexistant Studio</p>
                 </div>
-                <hr />
+                <hr>
               </div>
             </div>
           </div>
@@ -244,53 +242,46 @@
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers5.jpg"
-              alt="Assassin video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="Assassin video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
           <div class="popular_image_container">
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers4.jpg"
-              alt="Furious video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="Furious video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
           <div class="popular_image_container">
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers8.jpg"
-              alt="Boxer video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="Boxer video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
           <div class="popular_image_container">
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers3.jpg"
-              alt="Black video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="Black video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
           <div class="popular_image_container">
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers9.jpg"
-              alt="cyberpunk video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="cyberpunk video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
           <div class="popular_image_container">
             <img
               class="popular_image"
               src="Assets/images/GameHub_covers10.jpg"
-              alt="Forge Legend video game cover"
-            />
-            <button class="popular_button">Add to Cart</button>
+              alt="Forge Legend video game cover">
+            <a><p class="popular_button">Add to Cart</p></a>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
   </body>
 </html>

@@ -14,7 +14,7 @@
     <header>
       <!--Hamburger Menu for mobile-->
       <div>
-        <nav role="navigation">
+        <nav>
           <div id="menu">
             <input type="checkbox" />
 
@@ -24,14 +24,97 @@
 
             <ul id="menupoints">
               <li><a href="index.html">Home</a></li>
+              <li><a href="product_list.html">Games</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="shoppingcart.html">Shopping Cart</a></li>
             </ul>
           </div>
+          <div class="navcontainer">
+            <!--Navigation left of logo-->
+            <div class="leftnav">
+              <ul>
+                <li>
+                  <a href="product_list.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Games</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">About</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">Contact</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!--Logo-->
+            <div class="logocontainer">
+              <div class="logostyling">
+                <a href="index.html">
+                  <img
+                    class="logo"
+                    src="/Assets/images/GameHub_Logo.png"
+                    alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!--Navigation right of logo-->
+            <div class="rightnav">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/User_info_icon.png"
+                            alt="User profile icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="shoppingcart.html">
+                    <div class="circle">
+                      <div class="elipse">
+                        <p class="nav_button_text">
+                          <img
+                            class="nav_icon"
+                            src="Assets/images/Shopping_Cart_Icon.png"
+                            alt="Shopping cart icon"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
-      <!--Hamburger Menu for mobile-->
 
       <!--Mobile logo, hidden on desktop-->
       <div class="center_logo">
@@ -44,88 +127,6 @@
             />
           </div>
         </div>
-      </div>
-
-      <div class="navcontainer">
-        <!--Navigation left of logo-->
-        <nav class="leftnav">
-          <ul>
-            <li>
-              <a href="#!">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">Sell Games</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="about.html">
-                <div class="circle">
-                  <div class="elipse"><p class="nav_button_text">About</p></div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="contact.html">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">Contact</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <!--Logo-->
-        <div class="logocontainer">
-          <div class="logostyling">
-            <a href="index.html">
-              <img
-                class="logo"
-                src="/Assets/images/GameHub_Logo.png"
-                alt="Gamehub logo, Picture of a video game controller in a blue circle with the word gamehub written under"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!--Navigation right of logo-->
-        <nav class="rightnav">
-          <ul>
-            <li>
-              <a href="#!">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">
-                      <img
-                        class="nav_icon"
-                        src="Assets/images/User_info_icon.png"
-                        alt="User profile icon"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="shoppingcart.html">
-                <div class="circle">
-                  <div class="elipse">
-                    <p class="nav_button_text">
-                      <img
-                        class="nav_icon"
-                        src="Assets/images/Shopping_Cart_Icon.png"
-                        alt="Shopping cart icon"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -203,8 +204,8 @@
         <div id="checkout_procedure" class="content_column">
           <p>Total</p>
           <p>398,-</p>
-          <a href="checkout.html"
-            ><button class="checkout_button">Proceed to checkout</button></a
+          <a href="checkout.html" class="checkout_button"
+            ><p class="checkout_button_text">Proceed to checkout</p></a
           >
         </div>
       </div>
@@ -223,7 +224,7 @@
                 src="Assets/images/GameHub_covers5.jpg"
                 alt="Assassin video game cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
             <div class="popular_image_container">
               <img
@@ -231,7 +232,7 @@
                 src="Assets/images/GameHub_covers4.jpg"
                 alt="Furious video game cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
             <div class="popular_image_container">
               <img
@@ -239,7 +240,7 @@
                 src="Assets/images/GameHub_covers8.jpg"
                 alt="Boxer Video Game Cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
             <div class="popular_image_container">
               <img
@@ -247,7 +248,7 @@
                 src="Assets/images/GameHub_covers3.jpg"
                 alt="Black Video Game Cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
             <div class="popular_image_container">
               <img
@@ -255,7 +256,7 @@
                 src="Assets/images/GameHub_covers9.jpg"
                 alt="cyberpunk video game cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
             <div class="popular_image_container">
               <img
@@ -263,7 +264,7 @@
                 src="Assets/images/GameHub_covers10.jpg"
                 alt="forge legend video game cover"
               />
-              <button class="popular_button">Add to Cart</button>
+              <a><p class="popular_button">Add to Cart</p></a>
             </div>
           </div>
         </div>

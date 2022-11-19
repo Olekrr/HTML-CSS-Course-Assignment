@@ -112,9 +112,72 @@ body {
   width: 200px;
 }
 
+/*styling for big games image boxes*/
+.front_page_content_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #000000a6;
+}
+
+.content_text {
+  font-size: 30px;
+  margin: 0 2px 0 2px;
+}
+.deals_image_container {
+  margin: auto;
+  width: 80%;
+  
+}
+.deals_image {
+  width: 80%;
+  padding-top: 20px;
+}
+.flexbutton{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.deals_button {
+  margin-top: -5px;
+  width: 40%;
+  height: 40px;
+  background: #69dbd259;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.deals_button > p{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.front_page_content_container_desktop_adjustor {
+  background-color: #000000a6;
+}
+
 
 
 @media screen and (min-width: 1250px) {
+  /*Styling for big image games boxes*/
+  .games_content_container {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+  }
+  .front_page_content_container_desktop_adjustor {
+    display: flex;
+    margin-top: 30px;
+  }
+  .deals_image_container {
+    width: 50%;
+  }
+  .deals_image {
+    width: 86%;
+  }
+  .deals_button{
+    width: 43%;
+  }
   .mobile_logo {
     display: none;
   }
