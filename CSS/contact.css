@@ -47,7 +47,7 @@ input {
   cursor: pointer;
 }
 .form_button > p{
-  margin-top: 10px;
+  text-decoration: underline;
 }
 
 #content_container2 {
