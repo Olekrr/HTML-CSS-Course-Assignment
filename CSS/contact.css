@@ -27,7 +27,8 @@ hr {
 .input_container {
   margin: 40px 0px 40px 0;
 }
-input {
+input,
+textarea {
   height: 30px;
   width: 100%;
   background: #ffffffa8;

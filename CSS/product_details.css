@@ -36,6 +36,11 @@
 }
 .game_info_main_text {
   margin: 10px 0px 10px 0px;
+  line-height: 22px;
+}
+.itemnamesizeadjustment{
+  font-size: 24px;
+  
 }
 .product_details_photo_container {
   width: 100%;

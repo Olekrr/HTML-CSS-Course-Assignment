@@ -3,7 +3,7 @@ const container = document.querySelector(".scriptinjection");
 const totalPriceElement = document.querySelector("#totalprice");
 
 if (cartItems.length === 0) {
-  container.innerHTML = "<a href=\"./product_list.html\">Your cart is empty, visit our Games page to add some!</p></a>";
+  container.innerHTML = "<a href=\"./product_list.html\" class=\"darkbox\"'>Your cart is empty, visit our Games page to add some!</p></a>";
 } else {
   const itemQuantities = {};
 

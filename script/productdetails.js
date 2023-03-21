@@ -37,7 +37,7 @@ async function fetchData(url) {
             </div>
     
             <div class="game_info">
-              <h1>${item.name}</h1>
+              <h1 class="itemnamesizeadjustment">${item.name} - ${item.price}$</h1>
               <hr />
               <p class="game_info_main_text">${item.game_info}</p>
               <hr />
@@ -63,7 +63,7 @@ async function fetchData(url) {
                     <p class="product_details_button_text" id="textmargin"> Continue Shopping </p>
                   </a>
                   <button class="product_details_button" data-product='${btoa(JSON.stringify(item))}' id="cartbutton">
-                    <p class="product_details_button_text">Add to Cart: ${item.price}$</p></button>
+                    <p class="product_details_button_text">Add to Cart</p></button>
                 </div>
               </div>
             </div>
@@ -115,6 +115,8 @@ async function fetchData(url) {
         cartItems.push(product);
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
         countContainer.innerHTML = cartItems.length;
+        this.innerHTML = "Added to cart!";
+        this.style.backgroundColor = "#0051ff75";
       });
     });
   } catch (error) {
