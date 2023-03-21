@@ -69,7 +69,7 @@ input {
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1250px) {
   
   .content_column {
     width: 40%;
