@@ -150,177 +150,126 @@
       <div class="content_container">
         <div class="content_column">
           <div class="products">
-            <div class="content_column_subcontainer">
-              <img
-                src="Assets/images/GameHub_covers6.jpg"
-                alt="Space Wars video game cover"
-              />
-              <div class="text_container">
-                <h3>Space War</h3>
-                <hr />
-                <p>
-                  Discover and wage war upon ancient alien civilizations in the
-                  smash hit Space War
-                </p>
-              </div>
-              <br class="mobilebr" />
-              <hr class="mobilehr" />
-              <div>
-                <p>Quantity</p>
-                <p>1</p>
-              </div>
-              <br class="mobilebr" />
-              <hr class="mobilehr" />
-              <div>
-                <p>Total</p>
-                <p>99,-</p>
-              </div>
-            </div>
-            <div class="content_column_subcontainer">
-              <img
-                src="Assets/images/GameHub_covers.jpg"
-                alt="Ping pong championship video game cover"
-              />
-              <div class="text_container">
-                <h3>Ping Pong Campionship - Playbox</h3>
-                <hr />
-                <p>
-                  Tour the world and face skilled competitors in this
-                  remastering of a timeless classic
-                </p>
-              </div>
-              <br class="mobilebr" />
-              <hr class="mobilehr" />
-              <div>
-                <p>Quantity</p>
-                <p>1</p>
-              </div>
-              <br class="mobilebr" />
-              <hr class="mobilehr" />
-              <div>
-                <p>Total</p>
-                <p>99,-</p>
-              </div>
-            </div>
+            
             <div class="content_column_form_container">
               <h2>Checkout Information</h2>
-              <form>
+              <form class="form">
                 <div class="checkout_information_form">
-                  <label>First Name</label>
-                  <input type="text" name="firstname" />
-                  <label>Adress</label>
-                  <input type="text" name="adress" />
-                  <label>City</label>
-                  <input type="text" name="city" />
-                  <label>Email</label>
-                  <input type="text" name="email" />
+                  <label class="checkoutinfo">First Name
+                    <input type="text" id="firstname" placeholder="First Name" name="firstname" />
+                  </label>
+                  <div class="error" id="firstnameerror">Please enter first name</div>
+                  <label class="checkoutinfo">Adress
+                    <input type="text" id="adress" placeholder="Adress" name="adress" />
+                  </label>
+                  <div class="error" id="adresserror">Please enter adress</div>
+                  <label class="checkoutinfo">City
+                    <input type="text" id="city" placeholder="City" name="city" />
+                  </label>
+                  <div class="error" id="cityerror">Please enter your city</div>
+                  <label class="checkoutinfo">Email
+                    <input type="text" id="email" placeholder="Example@email.com" name="email" />
+                  </label>
+                  <div class="error" id="emailerror">Please enter valid email</div>
                 </div>
                 <div class="checkout_information_form">
-                  <label>Last Name</label>
-                  <input type="text" name="lastname" />
-                  <label>Post Code</label>
-                  <input type="text" name="postcode" />
-                  <label>Country</label>
-                  <input type="text" name="country" />
+                  <label class="checkoutinfo">Last Name
+                    <input type="text" id="lastname" placeholder="Last Name" name="lastname" />
+                  </label>
+                  <div class="error" id="lastnameerror">Please enter last name</div>
+                  <label class="checkoutinfo">Post Code
+                    <input type="text" id="postcode" placeholder="Post Code" name="postcode" />
+                  </label>
+                  <div class="error" id="postcodeerror">Please enter valid post code</div>
+                  <label class="checkoutinfo">Country
+                    <input type="text" id="country" placeholder="Country" name="country" />
+                  </label>
+                  <div class="error" id="countryerror">Please enter country</div>
                 </div>
               </form>
             </div>
-          </div>
+
+        </div>
           <div class="payment_information">
             <h1>Payment Method</h1>
             <hr class="payment_method_separator" />
             <div>
               <form class="payment_information_form">
+
                 <div class="flexer">
-                  <input class="checkbox1" type="checkbox" />
-                  <img
-                    class="payment_icon"
-                    src="Assets/images/Visa.png"
-                    alt="visa symbol"
-                  />
-                  <p class="card_separator">/</p>
-                  <img
-                    class="payment_icon"
-                    src="Assets/images/Mastercard.png"
-                    alt="mastercard symbol"
-                  />
+                  <label class="flexlabel">
+                    <input class="checkbox1" id="checkboxcard" type="checkbox" />
+                    <img class="payment_icon" src="Assets/images/Visa.png" alt="visa symbol"/>
+                    <p class="card_separator">/</p>
+                    <img class="payment_icon" src="Assets/images/Mastercard.png" alt="mastercard symbol"/>
+                  </label>
                 </div>
+                  
                 <div class="card_information">
                   <div>
-                    <label class="card_number_label">Card Number</label>
-                    <input
-                      class="card_number_input"
-                      type="text"
-                      name="cardnumber"
-                    />
+                    <label>
+                      Card nr
+                      <input name="cardnumber" id="cardnumber" placeholder="xxxx xxxx xxxx xxxx"/>
+                    </label>
+                    <div class="carderror" id="cardnumbererror">Please enter a valid nr (16 digits)</div>
                   </div>
                   <div>
-                    <label>Exp. Date</label>
-                    <input
-                      class="expdate_ccv_input"
-                      type="text"
-                      name="exp.date"
-                    />
+                    <label class="expccvlabel">
+                      Exp. Date
+                      <input class="expdate_ccv_input" name="exp.date" id="expdate" placeholder="xx/xx"/>
+                    </label>
+                    <div class="error" id="expdateerror">invalid</div>
                   </div>
                   <div>
-                    <label>CCV</label>
-                    <input class="expdate_ccv_input" type="text" name="ccv" />
+                    <label class="expccvlabel">CCV
+                      <input class="expdate_ccv_input" name="ccv" id="ccv" placeholder="xxx"/>
+                    </label>
+                    <div class="error" id="ccverror">invalid</div>
                   </div>
+                  
                 </div>
                 <div>
-                  <label class="card_number_label">Card Holder Name</label>
-                  <input
-                    class="card_number_input"
-                    type="text"
-                    name="cardholdername"
-                  />
+                  <label class="card_number_label">Card Holder Name
+                    <input type="text" name="cardholdername" id="cardholdername" />
+                  </label>
+                  <div class="fullnameerror" id="cardholdernameerror">Please enter your name</div>
                 </div>
+                
                 <div class="flexer">
-                  <input class="checkbox1" type="checkbox" />
-                  <img
-                    class="payment_icon"
-                    src="Assets/images/Google_Pay.png"
-                    alt="Google pay icon"
-                  />
+                  <input class="checkbox3" id="checkboxalt" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/Google_Pay.png" alt="Google pay icon"/>
                 </div>
+
                 <div class="flexer">
-                  <input class="checkbox1" type="checkbox" />
-                  <img
-                    class="payment_icon"
-                    src="Assets/images/Skrill.png"
-                    alt="Skrill icon"
-                  />
+                  <input class="checkbox3" id="checkboxalt" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/Skrill.png" alt="Skrill icon" />
                 </div>
+
                 <div class="flexer">
-                  <input class="checkbox1" type="checkbox" />
-                  <img
-                    class="payment_icon"
-                    src="Assets/images/paypal.png"
-                    alt="Paypal icon"
-                  />
+                  <input class="checkbox3" id="checkboxalt" type="checkbox" />
+                  <img class="payment_icon" src="Assets/images/paypal.png" alt="Paypal icon"/>
                 </div>
+
                 <div class="flexer">
-                  <input class="checkbox2" type="checkbox" />
+                  <input class="checkbox2" id="checkboxalt" type="checkbox" />
                   <p>Bank Transfer</p>
                 </div>
                 <div class="flexer">
-                  <input class="checkbox2" type="checkbox" />
+                  <input class="checkbox2" id="checkboxalt" type="checkbox" />
                   <p>Invoice on Arrival</p>
                 </div>
                 <p class="total_price">Total</p>
-                <p class="total_price">398,-</p>
-                <a href="checkout_complete.html">
-                  <div class="total_price_button">
-                    <div class="button">
-                      <p class="centering">Complete Transaction</p>
-                    </div>
-                  </div>
-                </a>
+                <p id="totalprice"class="total_price"></p>
+                <button class="button">
+                  Complete transaction
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="/script/checkoutvalidation.js"></script>
+    <script src="/script/checkoutcart.js"></script>
   </body>
 </html>

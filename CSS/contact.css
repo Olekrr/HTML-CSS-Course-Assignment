@@ -64,6 +64,10 @@ input {
   top: 25%;
   margin-top: 20px;
 }
+.error{
+  color: #ff0000;
+  display: none;
+}
 
 @media screen and (min-width: 1440px) {
   

@@ -162,21 +162,30 @@
           <hr />
           <form class="form">
             <div class="input_container">
-              <p>Name</p>
-              <input />
+              <label>
+                Name
+                <input name="name" id="name" placeholder="Name"/>
+              </label>
+              <div class="error" id="nameError">Please enter name</div>
             </div>
             <div class="input_container">
-              <p>Email</p>
-              <input />
+              <label>
+                Email
+                <input name="email" id="email" placeholder="Example@email.com"/>
+              </label>
+              <div class="error" id="emailError">Please a valid email</div>
             </div>
             <div class="input_container">
-              <p>Message</p>
-              <input class="message_input" />
+              <label>Message (minimum characters: 25)
+                <input name ="message" id="message" placeholder="Please enter in your message" class="message_input" />
+              </label>
+              <div class="error" id="messageError">Please enter a message</div>
+            </div>
+            <div class="content_container">
+              <button class="form_button"><p>Submit</p></button>
             </div>
           </form>
-          <div class="content_container">
-            <a class="form_button" href="feedbacksuccess.html"><p>Submit</p></a>
-          </div>
+          
         </div>
       </div>
       <div id="content_container2" class="content_container">
@@ -196,5 +205,6 @@
         </div>
       </div>
     </main>
+    <script src="/script/contactvalidation.js"></script>
   </body>
 </html>

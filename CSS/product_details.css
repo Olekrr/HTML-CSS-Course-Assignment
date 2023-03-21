@@ -60,6 +60,11 @@ p {
   text-align: left;
   font-size: 14px;
 }
+button {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
 .product_details_button {
   width: 130px;
   height: 30px;
@@ -71,25 +76,29 @@ p {
 }
 .product_details_button_text{
   text-align: center;
-  margin-top: 5px;
   font-size: 13px;
+  text-decoration: underline;
+}
+#textmargin{
+  margin-top: 7px;
 }
 .buttons_spacing {
   display: flex;
   justify-content: space-between;
 }
-h3 {
+h2 {
   text-align: left;
   margin-top: 10px;
+  font-size: 18px;
 }
 .trailer_img {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 24px;
 }
 .game_specifications_text {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 .game_specifications_sub {
   display: flex;

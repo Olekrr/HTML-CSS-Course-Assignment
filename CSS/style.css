@@ -113,6 +113,12 @@ body {
 }
 
 /*button styling*/
+button {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
 .popular_button {
   margin-top: -4px;
   margin-bottom: 10px;
@@ -135,6 +141,7 @@ body {
   background-color: #000000a6;
 }
 
+
 .content_text {
   font-size: 30px;
   margin: 0 2px 0 2px;
@@ -147,6 +154,9 @@ body {
 .deals_image {
   width: 80%;
   padding-top: 20px;
+}
+.learnmorep{
+  margin-top: 10px;
 }
 .flexbutton{
   display: flex;
@@ -163,9 +173,11 @@ body {
   margin-bottom: 20px;
 }
 .deals_button > p{
+  text-decoration: underline;
   width: 100%;
-  margin-top: 10px;
+  font-size: 14px;
 }
+
 
 .front_page_content_container_desktop_adjustor {
   background-color: #000000a6;
@@ -291,5 +303,16 @@ body {
   .logo {
     margin-top: 40px;
     width: 200px;
+  }
+  .count{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
   }
 }
