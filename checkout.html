@@ -31,19 +31,19 @@
       <!--Hamburger Menu for mobile-->
       <div>
         <nav>
-          <div id="menu">
+          <div id="menuToggle">
             <input type="checkbox" />
 
             <span></span>
             <span></span>
             <span></span>
 
-            <ul id="menupoints">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="product_list.html">Games</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="shoppingcart.html">Shopping Cart</a></li>
+            <ul id="menu">
+              <li><a class="navigation" href="index.html">Home</a></li>
+              <li><a class="navigation" href="product_list.html">Games</a></li>
+              <li><a class="navigation" href="about.html">About</a></li>
+              <li><a class="navigation" href="contact.html">Contact</a></li>
+              <li><a class="navigation" href="shoppingcart.html">Shopping Cart</a></li>
             </ul>
           </div>
           <div class="navcontainer">
@@ -220,20 +220,23 @@
                     </label>
                     <div class="error" id="expdateerror">invalid</div>
                   </div>
-                  <div>
-                    <label class="expccvlabel">CCV
-                      <input class="expdate_ccv_input" name="ccv" id="ccv" placeholder="xxx"/>
-                    </label>
-                    <div class="error" id="ccverror">invalid</div>
-                  </div>
-                  
                 </div>
+                
+                <div class="card_information">
                 <div>
                   <label class="card_number_label">Card Holder Name
                     <input type="text" name="cardholdername" id="cardholdername" />
                   </label>
                   <div class="fullnameerror" id="cardholdernameerror">Please enter your name</div>
                 </div>
+                <div>
+                  <label class="expccvlabel">CCV
+                    <input class="expdate_ccv_input" name="ccv" id="ccv" placeholder="xxx"/>
+                  </label>
+                  <div class="error" id="ccverror">invalid</div>
+                </div>
+              </div>
+                
                 
                 <div class="flexer">
                   <input class="checkbox3" id="checkboxalt" type="checkbox" />
@@ -260,9 +263,11 @@
                 </div>
                 <p class="total_price">Total</p>
                 <p id="totalprice"class="total_price"></p>
+                <div class="buttoncontainer">
                 <button class="button">
                   Complete transaction
                 </button>
+              </div>
               </form>
             </div>
           </div>

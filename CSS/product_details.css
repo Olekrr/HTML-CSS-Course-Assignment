@@ -148,3 +148,28 @@ h2 {
     width: 14%;
   }
 }
+@media screen and (min-width: 450px) and (max-width: 785px) {
+  .product_details_photo{
+    height: 125px;
+    width: 200px;
+  }
+  .game_trailer_content_column{
+    margin-top: 40px;
+  }
+
+
+}
+@media screen and (min-width: 785px) and (max-width: 1249px){
+  .product_details_photo{
+    height: 250px;
+    width: 400px;
+  }
+  .product_details_button{
+    width: 200px;
+    height: 50px;
+  }
+  #textmargin{
+    margin-top: 16px;
+  }
+
+}

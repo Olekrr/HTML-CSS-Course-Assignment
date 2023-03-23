@@ -8,6 +8,7 @@
   color: white;
   font-family: Inter;
   font-weight: bold;
+  
 }
 :root {
   --background-colour: linear-gradient(180deg, #69dbd200 55%, #69dbd2a8 75%);
@@ -16,79 +17,91 @@ body {
   background-image: url(/Assets/images/Background.jpg);
   text-align: center;
 }
-#menu {
+.navigation {
+  color: #ffffff;
+  font-size: 22px;
+}
+#menuToggle,
+#menuToggle > input {
   display: block;
-  z-index: 1;
-  padding: 10px;
+}
+#menuToggle > span,
+#menu {
+  background: #000000;
 }
 
-#menu a {
+#menuToggle {
+  position: fixed;
+  padding: 10px;
+  z-index: 1;
+}
+
+#menuToggle > a {
   color: #ffffff;
 }
 
-/*Hidden checkbox, used to trigger a transformation*/
-#menu input {
-  display: block;
+#menuToggle > input {
   width: 32px;
   height: 32px;
   position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
   opacity: 0;
   z-index: 2;
-  cursor: pointer;
-  background-color: #000000;
 }
 
-/*Spans styled to appear as thin grey lines*/
-#menu span {
+#menuToggle > span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #817d7d;
+  border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
+  background: #ffffff;
 }
 
-/*Transform used to remove middle span, and rotate top and bottom span
-  45 degrees to form a cross*/
-#menu span:first-child {
+#menuToggle > span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menu span:nth-last-child(2) {
+#menuToggle > span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menu input:checked ~ span {
+#menuToggle > input:checked ~ span {
+  background: #ffffff;
   opacity: 1;
   transform: rotate(45deg);
 }
 
-#menu input:checked ~ span:nth-last-child(3) {
+#menuToggle > input:checked ~ span:nth-last-child(3) {
   opacity: 0;
 }
 
-#menu input:checked ~ span:nth-last-child(2) {
+#menuToggle > input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg);
 }
 
-/*Is hidden untill checkbox is checked, at which point
-  it slides in from the left*/
-#menupoints {
+#menu {
   position: absolute;
-  width: 100%;
-  background: #000000;
-  list-style: none;
+  width: 315px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 }
 
-#menupoints li {
-  font-size: 22px;
+#menu > li {
+  padding: 10px 0;
+  text-align: left;
 }
 
-#menu input:checked ~ ul {
+#menuToggle > input:checked ~ ul {
   transform: none;
 }
 
@@ -104,7 +117,6 @@ body {
   width: 270px;
   height: 210px;
   border-radius: 50%;
-  background: var(--background-colour);
   margin-bottom: 30px;
 }
 .logo {
@@ -130,6 +142,7 @@ button:hover {
   background-color: #2b959c;
 }
 
+
 .logocontainer:hover,
 .circle:hover,
 .popular_image_container:hover,
@@ -140,9 +153,7 @@ button:hover {
 .remove_button:hover{
   transform: scale(1.5)
 }
-.product_details_photo:hover{
- transform: scale(2.5)
-}
+
 .popular_button {
   margin-top: -4px;
   margin-bottom: 10px;
@@ -269,7 +280,7 @@ button:hover {
   .mobile_logo {
     display: none;
   }
-  #menu {
+  #menuToggle {
     display: none;
   }
   .navcontainer {
@@ -339,4 +350,7 @@ button:hover {
     text-align: center;
     line-height: 30px;
   }
+  .product_details_photo:hover{
+    transform: scale(2.5)
+}
 }

@@ -88,7 +88,7 @@ input {
 .card_information {
   display: flex;
 }
-.card_number_label,
+
 .card_information {
   margin-left: 50px;
 }
@@ -118,13 +118,16 @@ input {
   text-align: right;
   margin-right: 20px;
 }
+.buttoncontainer{
+  text-align: right;
+}
 .button {
   width: 200px;
   height: 40px;
   background: #69dbd259;
   border-radius: 5px;
-  margin-left: 50%;
   border: none;
+  margin-right: 20px;
 }
 .fullnameerror{
   margin-left: 50px;
