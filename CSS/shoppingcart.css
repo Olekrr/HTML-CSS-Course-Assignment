@@ -9,6 +9,7 @@
   margin-bottom: 20px;
   display: flex;
   position: relative;
+  width: 100%;
 }
 .cartcontainer{
   display: flex;
@@ -106,6 +107,22 @@ hr {
 .popular_image {
   margin-top: 20px;
   width: 100%;
+}
+.quantityflex{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.decrease-quantity,
+.increase-quantity{
+  background: none;
+  margin-top: 35px;
+  width: 20px;
+}
+.decrease-quantity:hover,
+.increase-quantity:hover{
+  cursor: pointer;
+  background: none;
 }
 @media screen and (min-width: 1250px) {
   .content_column {

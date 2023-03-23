@@ -60,7 +60,7 @@ async function fetchData(url) {
                 <hr />
                 <div class="buttons_spacing">
                   <a href="product_list.html" class="product_details_button">
-                    <p class="product_details_button_text" id="textmargin"> Continue Shopping </p>
+                    <p class="product_details_button_text" id="textmargin"> More Games </p>
                   </a>
                   <button class="product_details_button" data-product='${btoa(JSON.stringify(item))}' id="cartbutton">
                     <p class="product_details_button_text">Add to Cart</p></button>
