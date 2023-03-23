@@ -125,6 +125,7 @@ hr {
   background: none;
 }
 @media screen and (min-width: 1250px) {
+  
   .content_column {
     width: 860px;
   }
