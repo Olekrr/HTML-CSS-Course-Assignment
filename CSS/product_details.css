@@ -11,7 +11,6 @@
   justify-content: space-evenly;
   padding-bottom: 15px;
 }
-
 .rating {
   display: flex;
   justify-content: center;
@@ -29,7 +28,6 @@
   width: 80%;
   margin-top: 28px;
 }
-
 .game_info {
   width: 80%;
   margin: auto;
@@ -50,7 +48,6 @@
   width: 30%;
   border: #000000 solid;
 }
-
 .game_trailer_content_column {
   width: 80%;
   position: relative;
@@ -110,22 +107,20 @@ h2 {
   justify-content: space-between;
   margin-top: 10px;
 }
-
 #bottom_container {
   margin-top: 20px;
 }
 .botom_column_text {
   margin: auto;
 }
-
 .popular_image_container {
   width: 50%;
   margin: auto;
 }
-
 .popular_image {
   width: 100%;
 }
+
 @media screen and (min-width: 1250px) {
   
   .content_column {
@@ -148,6 +143,7 @@ h2 {
     width: 14%;
   }
 }
+
 @media screen and (min-width: 450px) and (max-width: 785px) {
   .product_details_photo{
     height: 125px;
@@ -156,8 +152,7 @@ h2 {
   .game_trailer_content_column{
     margin-top: 40px;
   }
-
-
+  
 }
 @media screen and (min-width: 785px) and (max-width: 1249px){
   .product_details_photo{

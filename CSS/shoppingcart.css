@@ -34,7 +34,6 @@
   text-align: left;
   display: none;
 }
-
 hr {
   margin: 5px 0px;
 }
@@ -43,12 +42,10 @@ hr {
   margin-top: 15px;
   margin: auto;
 }
-
 .margin_adjustment {
   margin-top: 35px;
   cursor: pointer;
 }
-
 .innercontainer{
   text-align: right;
   float: right;
@@ -124,6 +121,7 @@ hr {
   cursor: pointer;
   background: none;
 }
+
 @media screen and (min-width: 1250px) {
   
   .content_column {
@@ -132,14 +130,10 @@ hr {
   .image_container {
     width: 30%;
   }
-
   .description_container {
     width: 70%;
     display: block;
   }
-  
- 
-
   .final_column {
     display: flex;
   }
