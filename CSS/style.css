@@ -8,7 +8,6 @@
   color: white;
   font-family: Inter;
   font-weight: bold;
-  
 }
 :root {
   --background-colour: linear-gradient(180deg, #69dbd200 55%, #69dbd2a8 75%);
@@ -29,17 +28,14 @@ body {
 #menu {
   background: #000000;
 }
-
 #menuToggle {
   position: fixed;
   padding: 10px;
   z-index: 1;
 }
-
 #menuToggle > a {
   color: #ffffff;
 }
-
 #menuToggle > input {
   width: 32px;
   height: 32px;
@@ -50,7 +46,6 @@ body {
   opacity: 0;
   z-index: 2;
 }
-
 #menuToggle > span {
   display: block;
   width: 33px;
@@ -62,29 +57,23 @@ body {
   transform-origin: 4px 0px;
   background: #ffffff;
 }
-
 #menuToggle > span:first-child {
   transform-origin: 0% 0%;
 }
-
 #menuToggle > span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
 #menuToggle > input:checked ~ span {
   background: #ffffff;
   opacity: 1;
   transform: rotate(45deg);
 }
-
 #menuToggle > input:checked ~ span:nth-last-child(3) {
   opacity: 0;
 }
-
 #menuToggle > input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg);
 }
-
 #menu {
   position: absolute;
   width: 315px;
@@ -95,16 +84,13 @@ body {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 }
-
 #menu > li {
   padding: 10px 0;
   text-align: left;
 }
-
 #menuToggle > input:checked ~ ul {
   transform: none;
 }
-
 .navcontainer {
   display: none;
 }
@@ -112,7 +98,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .mobile_logo {
   width: 270px;
   height: 210px;
@@ -123,15 +108,12 @@ body {
   margin-top: 40px;
   width: 200px;
 }
-
 /*button styling*/
 button {
   padding: 0;
   border: none;
-  
-  
 }
-.darkbox{
+.darkbox {
   background-color: #000000a6;
 }
 .checkout_button:hover,
@@ -141,19 +123,6 @@ button {
 button:hover {
   background-color: #2b959c;
 }
-
-
-.logocontainer:hover,
-.circle:hover,
-.popular_image_container:hover,
-.deals_image_container:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.remove_button:hover{
-  transform: scale(1.5)
-}
-
 .popular_button {
   margin-top: -4px;
   margin-bottom: 10px;
@@ -167,7 +136,6 @@ button:hover {
   cursor: pointer;
   letter-spacing: 1px;
 }
-
 /*styling for big games image boxes*/
 .front_page_content_container {
   display: flex;
@@ -175,8 +143,6 @@ button:hover {
   margin-top: 20px;
   background-color: #000000a6;
 }
-
-
 .content_text {
   font-size: 30px;
   margin: 0 2px 0 2px;
@@ -184,16 +150,15 @@ button:hover {
 .deals_image_container {
   margin: auto;
   width: 80%;
-  
 }
 .deals_image {
   width: 80%;
   padding-top: 20px;
 }
-.learnmorep{
+.learnmorep {
   margin-top: 10px;
 }
-.flexbutton{
+.flexbutton {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -207,13 +172,11 @@ button:hover {
   cursor: pointer;
   margin-bottom: 20px;
 }
-.deals_button > p{
+.deals_button > p {
   text-decoration: underline;
   width: 100%;
   font-size: 14px;
 }
-
-
 .front_page_content_container_desktop_adjustor {
   background-color: #000000a6;
 }
@@ -250,12 +213,10 @@ button:hover {
   margin-top: 20px;
   cursor: pointer;
 }
-.ch-fe-form_button > p{
+.ch-fe-form_button > p {
   font-size: 14px;
   margin-top: 10px;
 }
-
-
 
 @media screen and (min-width: 1250px) {
   /*Styling for big image games boxes*/
@@ -274,7 +235,7 @@ button:hover {
   .deals_image {
     width: 86%;
   }
-  .deals_button{
+  .deals_button {
     width: 43%;
   }
   .mobile_logo {
@@ -298,7 +259,6 @@ button:hover {
   li {
     margin: 67.5px 12px 67.5px 12px;
   }
-
   .circle {
     border-radius: 50%;
     background: #1b203d;
@@ -320,7 +280,6 @@ button:hover {
     width: 100%;
     text-align: center;
     font-size: 16px;
-    
   }
   .nav_icon {
     position: relative;
@@ -339,7 +298,7 @@ button:hover {
     margin-top: 40px;
     width: 200px;
   }
-  .count{
+  .count {
     position: relative;
     top: 50px;
     left: 50px;
@@ -350,7 +309,17 @@ button:hover {
     text-align: center;
     line-height: 30px;
   }
-  .product_details_photo:hover{
-    transform: scale(2.5)
-}
+  .product_details_photo:hover {
+    transform: scale(2.5);
+  }
+  .logocontainer:hover,
+  .circle:hover,
+  .popular_image_container:hover,
+  .deals_image_container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .remove_button:hover {
+    transform: scale(1.5);
+  }
 }
