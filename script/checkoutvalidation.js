@@ -187,3 +187,24 @@ function validateExpDate(expDate) {
   const patternMatches = regEx.test(expDate);
   return patternMatches;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cardNumberInput = document.getElementById('cardnumber');
+  const expDateInput = document.getElementById('expdate');
+
+  cardNumberInput.addEventListener('input', function () {
+    let value = this.value.replace(/\s+|-/g, '');
+    if (value.length > 16) {
+      value = value.slice(0, 16);
+    }
+    this.value = value.replace(/(\d{4})(?=\d)/g, '$1-');
+  });
+
+  expDateInput.addEventListener('input', function () {
+    let value = this.value.replace(/\D+/g, '');
+    if (value.length > 4) {
+      value = value.slice(0, 4);
+    }
+    this.value = value.replace(/(\d{2})(?=\d)/g, '$1/');
+  });
+});

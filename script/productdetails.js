@@ -116,7 +116,7 @@ async function fetchData(url) {
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
         countContainer.innerHTML = cartItems.length;
         this.innerHTML = "Added to cart!";
-        this.style.backgroundColor = "#0051ff75";
+        this.style.backgroundColor = "#00BBC2";
       });
     });
   } catch (error) {
