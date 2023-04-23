@@ -21,7 +21,7 @@ if (cartItems.length === 0) {
   for (const itemName in itemQuantities) {
     const itemQuantity = itemQuantities[itemName];
     const item = cartItems.find((item) => item.name === itemName);
-    const itemTotalPrice = item.price * itemQuantity;
+    const itemTotalPrice = item.prices.price/100 * itemQuantity;
 
     totalPrice += itemTotalPrice;
 
@@ -30,12 +30,12 @@ if (cartItems.length === 0) {
         <div class="content_column" data-item-name="${itemName}">
           <div class="bandade">
             <div class="image_container">
-              <img class="game_image" src="${item.cover_url}" alt="Game cover"/>
+              <img class="game_image" src="${item.images[0].src}" alt="Game cover"/>
             </div>
             <div class="description_container">
               <h3>${itemName} - Playbox</h3>
               <hr />
-              <p>${item.cartText}</p>
+              <p>${item.short_description}</p>
             </div>
           </div>
           <div class="bandade">
@@ -49,7 +49,7 @@ if (cartItems.length === 0) {
             </div>
             <div class="information_container">
               <p>Price</p>
-              <p class="margin_adjustment">${itemTotalPrice}$</p>
+              <p class="margin_adjustment">${itemTotalPrice}kr</p>
             </div>
             <div class="information_container">
               <p>Remove</p>
@@ -67,7 +67,7 @@ if (cartItems.length === 0) {
     container.insertAdjacentHTML("beforeend", itemHTML);
   }
 
-  totalPriceElement.innerHTML = totalPrice + "$";
+  totalPriceElement.innerHTML = totalPrice + "kr";
 
   const updateQuantity = (button, increase) => {
     const itemContainer = button.closest(".content_column");
@@ -96,13 +96,13 @@ if (cartItems.length === 0) {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
     quantityElement.textContent = itemQuantities[itemName];
-    const itemTotalPrice = item.price * itemQuantities[itemName];
+    const itemTotalPrice = item.prices.price/100 * itemQuantities[itemName];
     itemContainer.querySelector(
       ".information_container p:last-child"
-    ).textContent = `${itemTotalPrice}$`;
+    ).textContent = `${itemTotalPrice}kr`;
 
-    totalPrice += increase ? item.price : -item.price;
-    totalPriceElement.innerHTML = totalPrice + "$";
+    totalPrice += increase ? item.prices.price/100 : -item.prices.price/100;
+    totalPriceElement.innerHTML = totalPrice + "kr";
   };
 
   const increaseButtons = document.querySelectorAll(".increase-quantity");
@@ -129,8 +129,8 @@ if (cartItems.length === 0) {
 
       itemContainer.remove();
 
-      totalPrice -= removedItem.price * itemQuantities[itemName];
-      totalPriceElement.innerHTML = totalPrice + "$";
+      totalPrice -= removedItem.prices.price/100 * itemQuantities[itemName];
+      totalPriceElement.innerHTML = totalPrice + "kr";
 
       if (cartItems.length === 0) {
         window.location.reload();
