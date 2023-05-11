@@ -1,7 +1,7 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "https://gamehub.olekristianfrontend.no/wp-json/wc/store/products";
+const url = `https://gamehub.olekristianfrontend.no/wp-json/wc/store/products/${id}`;
 const customerKey = "ck_aa4e90c520fe2465096746796407d25176686a71";
 const secret = "cs_93d803ead5d112a83450f0c8e2251bb36966f2ef";
 const container = document.querySelector(".test");
@@ -20,11 +20,8 @@ async function fetchData(url) {
         "Authorization": "Basic " + btoa(`${customerKey}:${secret}`)
       }
     });
-    const data = await response.json();
-    console.log(data);
-    for (let i = 0; i < data.length; i++) {
-      const product = data[i];
-      if (id && product.id === parseInt(id)) {
+    const product = await response.json();
+    console.log(product)
         titleChange.innerHTML += `${product.name}`;
         container.innerHTML += `
         <div class="content_container">
@@ -114,8 +111,8 @@ async function fetchData(url) {
           </div>
         </div>
       </div>`;
-      }
-    }
+      
+    
     const addToCartButtons = document.querySelectorAll("#cartbutton");
     addToCartButtons.forEach((button) => {
       button.addEventListener("click", function () {
