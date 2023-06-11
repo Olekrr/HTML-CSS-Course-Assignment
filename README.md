@@ -1,6 +1,6 @@
 # Game Hub
 
-![logo](assets/images/GameHub_Logo.png)
+![logo](assets/images/readmelogo.png)
 
 A school project site for buying video games
 
